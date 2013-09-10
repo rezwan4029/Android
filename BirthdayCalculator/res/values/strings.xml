@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BirthdayCalculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="inp1">Enter Your Birth Year in this format :</string>
+    <string name="inp2">(Day/Month/Year)</string>
+    <string name="inp3">Enter Your Birthdate</string>
+    <string name="bbbbbbbbbbbbbb">Enter Your Birthdate</string>
+    
+</resources>

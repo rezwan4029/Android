@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tour"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="17" />
+    
+    
+      <permission
+        android:name="com.example.tour.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+ 
+    <uses-permission android:name="com.example.tour.permission.MAPS_RECEIVE" />
+    
+   
+
+    
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ 
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+ 
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    
+    
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/black"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Starting Page -->
+        <activity
+            android:name="com.example.tour.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Find you Destination Activity -->
+        <activity
+            android:name="com.example.tour.Destination"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.DESTINATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Grid Search Activities -->
+        <activity
+            android:name="com.example.tour.ImageSearch"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.IMAGESEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tour.FullImageActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FULLIMAGEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- About Us Activity -->
+        <activity
+            android:name="com.example.tour.Us"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.US" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Place-Dhaka-Lalabagh fort Activity -->
+        <activity
+            android:name="com.example.tour.Lalbagh"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.LALBAGH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Place-Dhaka-Netrokona-Birishiri Activity -->
+        <activity
+            android:name="com.example.tour.Birishiri"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.BIRISHIRI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Place-Cbazar-Homchori Activity -->
+        <activity
+            android:name="com.example.tour.Himchori"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.HIMCHORI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Place-Cbazar-Moheskhali Activity -->
+        <activity
+            android:name="com.example.tour.Moheskhali"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MOHESKHALI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Place-Ctg-Potenga Activity -->
+        <activity
+            android:name="com.example.tour.Potenga"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.POTENGA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Place Ctg-WCementry Activity -->
+        <activity
+            android:name="com.example.tour.Wcemetery"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.WCEMETERY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Place Sylet-jaflong Activity -->
+        <activity
+            android:name="com.example.tour.Jaflong"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.JAFLONG" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Place Sylet MAdhabkundo Activity -->
+        <activity
+            android:name="com.example.tour.Madhabkunda"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MADHABKUNDA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Place Khulna Kuakata Activity -->
+        <activity
+            android:name="com.example.tour.Kuakata"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.KUAKATA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Place Khulna Sundarban Activity -->
+        <activity
+            android:name="com.example.tour.Sundarban"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.SUNDARBAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Place No Content Activity -->
+        <activity
+            android:name="com.example.tour.NoContent"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.NOCONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="com.example.tour.Gmap"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.GMAP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        <activity
+            android:name="com.example.tour.Tempo"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.TEMPO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+         <activity
+             android:name="googleme.NavigationActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        
+        
+        
+         <meta-data android:name="com.google.android.gms.version"
+               android:value="@integer/google_play_services_version"/>
+      
+        <!-- Goolge API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAaa_hHhueU2K6ZVdfXpNj9GJnTyuowLeM" /> 
+        
+    </application>
+
+</manifest>

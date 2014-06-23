@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ggb"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideOverlay"
+    android:textAlignment="textStart" >
+
+    <TextView
+        android:id="@+id/textDiv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Division"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:tag="Division" />
+
+    <TextView
+        android:id="@+id/textZilla"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Zilla"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:tag="Zilla" />
+
+    <Button
+        android:id="@+id/btnPlace"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Place"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:tag="Place" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="38dp"
+        android:visibility="invisible"
+        android:text="View Details"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+</LinearLayout>

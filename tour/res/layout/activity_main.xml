@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkgrnd"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/buttonDes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonIGrid"
+        android:layout_alignParentLeft="true"
+        android:text="Find your Desire Destination" />
+
+    <Button
+        android:id="@+id/buttonIGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonUS"
+        android:layout_alignParentLeft="true"
+        android:text="Search Through Image Grid" />
+
+    <Button
+        android:id="@+id/buttonUS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="35dp"
+        android:text="About Us" />
+
+</RelativeLayout>
